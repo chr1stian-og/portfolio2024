@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-import Link from "next/link";
-import Image from "next/image";
 
 const pauseIcon = require("../assets/icons/pause-circle.svg");
 const playIcon = require("../assets/icons/play-circle.svg");
 const github = require("../assets/icons/github.svg");
+
+const clubnetlogo = require("../assets/clubnet-black.png");
 
 const GlassButton = ({
   text,
@@ -56,14 +56,14 @@ const GlassButton = ({
         >
           <span className="glass-text-button"> {text || ""}</span>
           {displayImageButton && (
-            <Image
+            <img
               src={slideShowButton}
               alt="slideshow controls"
               className={`w-8 h-8 mix-blend-overlay`}
             />
           )}
           {image && (
-            <Image
+            <img
               src={image}
               alt="slideshow controls"
               className="w-8 h-8 mix-blend-overlay "
@@ -80,7 +80,7 @@ const GlassButton = ({
             {text || ""}
           </span>
           {/* {displayImageButton && (
-            <Image
+            <img
               src={slideShowButton}
               alt="slideshow controls"
               className="w-6 h-6 mix-blend-overlay "

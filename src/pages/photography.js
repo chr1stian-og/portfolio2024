@@ -1,10 +1,7 @@
 import React, { useState, useEffect } from "react";
-import Image from "next/image";
-import Head from "next/head";
 import Background from "../components/Background.js";
 import GlassButton from "../components/GlassButton.js";
-import Link from "next/link";
-import Cursor from "../components/cursor.js";
+import Cursor from "../components/Cursor.js";
 import Navbar from "../components/Navbar.js";
 import Carousel from "../components/Carousel.js";
 
@@ -45,11 +42,6 @@ const Photography = () => {
   return (
     <>
       <Cursor isVisible={false} />
-      <Head>
-        <title>Christian</title>
-        <meta name="description" content="web portfolio" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
 
       <div className="relative h-screen overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full">
@@ -60,7 +52,7 @@ const Photography = () => {
         <main className=" z-10 flex flex-col justify-center align-center items-center">
           <div className="glass-player absolute bottom-6 items-center">
             {!playing && (
-              <Image
+              <img
                 src={previous}
                 onClick={() => alert("previous")}
                 onKeyDown={handleKeyDown}
@@ -76,7 +68,7 @@ const Photography = () => {
               onKeyDown={handleKeyDown}
             />
             {!playing && (
-              <Image
+              <img
                 src={next}
                 onClick={() => alert("next")}
                 onKeyDown={handleKeyDown}

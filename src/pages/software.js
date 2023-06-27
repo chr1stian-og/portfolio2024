@@ -1,12 +1,10 @@
 import Navbar from "../components/Navbar";
 import React, { useState, useEffect } from "react";
-import Image from "next/image";
-import Head from "next/head";
 import Background from "../components/Background.js";
 import GlassButton from "../components/GlassButton.js";
-import Link from "next/link";
 import GlassProjects from "../components/GlassProjects";
-import Cursor from "../components/cursor.js";
+import Cursor from "../components/Cursor.js";
+import { Link } from "react-router-dom";
 
 const back = require("../assets/icons/back.svg");
 const pauseIcon = require("../assets/icons/pause-circle.svg");
@@ -23,12 +21,6 @@ const Software = () => {
   return (
     <>
       <Cursor isVisible={false} />
-      <Head>
-        <title>Christian</title>
-        <meta name="description" content="web portfolio" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
       <div className="relative h-screen overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full">
           <Background />

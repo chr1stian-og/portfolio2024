@@ -1,8 +1,7 @@
-import Head from "next/head";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
-const cursor = ({ isVisible }) => {
+const Cursor = ({ isVisible }) => {
   const [mousePosition, setMousePosition] = useState({
     x: 0,
     y: 0,
@@ -58,4 +57,4 @@ const cursor = ({ isVisible }) => {
   );
 };
 
-export default cursor;
+export default Cursor;

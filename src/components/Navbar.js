@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
-import Link from "next/link";
-import Image from "next/image";
+import { Link } from "react-router-dom";
 
 const Navbar = ({ type, name, image }) => {
   const randomSuggestion = Math.random() < 0.5 ? "SOFTWARE" : "PHOTOGRAPHY";
@@ -9,11 +8,11 @@ const Navbar = ({ type, name, image }) => {
     <div className="flex-col items-end flex sm:flex-row justify-between sm:items-center mx-8 lg:mx-16 mt-4  min-w-fit gap-4">
       <div className="min-w-fit">
         {type !== "home" && (
-          <Link href="/">
+          <Link to="/">
             <span className="glass-text-bold">{name || ""}</span>
             {image && (
               // <button className="glass-button">
-              <Image
+              <img
                 src={image}
                 className="w-6 h-6 mix-blend-overlay"
                 alt="back button"
@@ -23,10 +22,10 @@ const Navbar = ({ type, name, image }) => {
           </Link>
         )}
         {type === "home" && (
-          <Link href="/personal">
+          <Link to="/personal">
             <span className="glass-text-bold">{name || ""}</span>
             {image && (
-              <Image
+              <img
                 src={image}
                 className="w-7 h-7 mix-blend-overlay"
                 alt="back button"
@@ -38,10 +37,10 @@ const Navbar = ({ type, name, image }) => {
       {/* <div className="space-x-4 lg:space-x-10 min-w-fit"> */}
       {type === "home" ? (
         <>
-          <Link href="/software">
+          <Link to="/software">
             <span className="glass-text-bold">SOFTWARE</span>
           </Link>
-          <Link href="/photography">
+          <Link to="/photography">
             <span className="glass-text-bold">PHOTOGRAPHY</span>
           </Link>
         </>

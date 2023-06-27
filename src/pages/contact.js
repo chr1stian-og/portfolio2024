@@ -1,13 +1,10 @@
 import Navbar from "../components/Navbar";
 import React, { useState, useEffect } from "react";
-import script from "next/script";
-import Head from "next/head";
-import Image from "next/image";
 import Background from "../components/Background.js";
 import GlassButton from "../components/GlassButton.js";
-import Link from "next/link";
+import { Link } from "react-router-dom";
 import GlassFrame from "../components/GlassFrame";
-import Cursor from "../components/cursor.js";
+import Cursor from "../components/Cursor.js";
 
 const back = require("../assets/icons/back.svg");
 const pauseIcon = require("../assets/icons/pause-circle.svg");
@@ -42,11 +39,6 @@ function Contact() {
   return (
     <>
       <Cursor />
-      <Head>
-        <title>Christian</title>
-        <meta name="description" content="web portfolio" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
 
       <div className="relative h-screen overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full">

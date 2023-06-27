@@ -1,19 +1,18 @@
 import React, { useEffect, useState } from "react";
-import Image from "next/image";
 
 const landscapeImages = [
-  "/landscape/IMG_6328.jpg",
-  "/landscape/IMG_6323.jpg",
-  "/landscape/IMG_0234.jpg",
-  "/landscape/IMG_6324.jpg",
-  "/landscape/IMG_4605.jpg",
+  "../assets/landscape/IMG_6328.jpg",
+  "../assets/landscape/IMG_6323.jpg",
+  "../assets/landscape/IMG_0234.jpg",
+  "../assets/landscape/IMG_6324.jpg",
+  "../assets/landscape/IMG_4605.jpg",
 ];
 const portraitImages = [
-  "/portrait/IMG_0236.jpg",
-  "/portrait/IMG_0237.jpg",
-  "/portrait/IMG_0597.jpg",
-  "/portrait/IMG_7036.jpg",
-  "/portrait/IMG_2052.jpg",
+  "../assets/portrait/IMG_0236.jpg",
+  "../assets/portrait/IMG_0237.jpg",
+  "../assets/portrait/IMG_0597.jpg",
+  "../assets/portrait/IMG_7036.jpg",
+  "../assets/portrait/IMG_2052.jpg",
 ];
 
 const BackgroundImage = ({ status, timer }) => {
@@ -59,12 +58,7 @@ const BackgroundImage = ({ status, timer }) => {
   return (
     <div className="top-0 left-0 w-screen h-screen overflow-hidden">
       <div className="w-full h-full absolute inset-0 z-[-1]">
-        <Image
-          src={image}
-          alt="Background Image"
-          layout="fill"
-          objectFit="cover"
-        />
+        <img src={image} alt="Background Image" layout="fill" />
       </div>
     </div>
   );

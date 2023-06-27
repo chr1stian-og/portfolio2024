@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
-import Link from "next/link";
-import Image from "next/image";
+import { Link } from "react-router-dom";
 
 const previous = require("../assets/icons/chevron-left.svg");
 const next = require("../assets/icons/chevron-right.svg");
@@ -10,7 +9,7 @@ const GlassFrame = ({ onClick, title, image, onClose, description }) => {
   return (
     <div onClick={onClick} className="glass-frame">
       <div className="flex flex-row justify-between items-center">
-        <Image
+        <img
           src={previous}
           className="w-8 h-8 mix-blend-overlay "
           alt="previous"
@@ -18,9 +17,8 @@ const GlassFrame = ({ onClick, title, image, onClose, description }) => {
         <div>
           <span className="glass-text-button"> {title}</span>
           <span className="glass-text-button"> {description}</span>
-          <Image src={info} className="w-6 h-6 mix-blend-overlay " alt="indo" />
         </div>
-        <Image src={next} className="w-6 h-6 mix-blend-overlay " alt="next" />
+        <img src={next} className="w-6 h-6 mix-blend-overlay " alt="next" />
       </div>
     </div>
   );
