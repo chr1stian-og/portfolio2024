@@ -6,10 +6,10 @@ import { Link } from "react-router-dom";
 import GlassFrame from "../components/GlassFrame";
 import Cursor from "../components/Cursor.js";
 
-const back = require("../assets/icons/back.svg");
-const pauseIcon = require("../assets/icons/pause-circle.svg");
-const playIcon = require("../assets/icons/play.svg");
-const downloadIcon = require("../assets/icons/download.svg");
+import back from "../assets/icons/back.svg";
+import pauseIcon from "../assets/icons/pause-circle.svg";
+import playIcon from "../assets/icons/play.svg";
+import downloadIcon from "../assets/icons/download.svg";
 
 function Contact() {
   const handleClick = () => {

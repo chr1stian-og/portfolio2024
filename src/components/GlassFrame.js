@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-const previous = require("../assets/icons/chevron-left.svg");
-const next = require("../assets/icons/chevron-right.svg");
-const info = require("../assets/icons/info.svg");
+import previous from "../assets/icons/chevron-left.svg";
+import next from "../assets/icons/chevron-right.svg";
+import info from "../assets/icons/info.svg";
 
 const GlassFrame = ({ onClick, title, image, onClose, description }) => {
   return (

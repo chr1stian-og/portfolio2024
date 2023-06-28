@@ -50,7 +50,7 @@ const Navbar = ({ type, name, image }) => {
       {/* </div> */}
       <div className="min-w-fit">
         <Link
-          href={`/${
+          to={`/${
             type !== "CONTACT"
               ? "contact"
               : randomSuggestion.toLocaleLowerCase()

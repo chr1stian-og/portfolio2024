@@ -1,19 +1,21 @@
 import React, { useEffect, useState } from "react";
 
 const landscapeImages = [
-  "../assets/landscape/IMG_6328.jpg",
-  "../assets/landscape/IMG_6323.jpg",
-  "../assets/landscape/IMG_0234.jpg",
-  "../assets/landscape/IMG_6324.jpg",
-  "../assets/landscape/IMG_4605.jpg",
+  "../assets/images/landscape/IMG_6328.jpg",
+  "../assets/images/landscape/IMG_6323.jpg",
+  "../assets/images/landscape/IMG_0234.jpg",
+  "../assets/images/landscape/IMG_6324.jpg",
+  "../assets/images/landscape/IMG_4605.jpg",
 ];
 const portraitImages = [
-  "../assets/portrait/IMG_0236.jpg",
-  "../assets/portrait/IMG_0237.jpg",
-  "../assets/portrait/IMG_0597.jpg",
-  "../assets/portrait/IMG_7036.jpg",
-  "../assets/portrait/IMG_2052.jpg",
+  "../assets/images/portrait/IMG_0236.jpg",
+  "../assets/images/portrait/IMG_0237.jpg",
+  "../assets/images/portrait/IMG_0597.jpg",
+  "../assets/images/portrait/IMG_7036.jpg",
+  "../assets/images/portrait/IMG_2052.jpg",
 ];
+
+const image2 = require("../assets/images/landscape/IMG_6324.jpg");
 
 const BackgroundImage = ({ status, timer }) => {
   const [currentImageFile, setCurrentImageFile] = useState(landscapeImages);
@@ -58,7 +60,11 @@ const BackgroundImage = ({ status, timer }) => {
   return (
     <div className="top-0 left-0 w-screen h-screen overflow-hidden">
       <div className="w-full h-full absolute inset-0 z-[-1]">
-        <img src={image} alt="Background Image" layout="fill" />
+        <img
+          src={image2}
+          alt="Background Image"
+          className="object-cover w-full h-full"
+        />
       </div>
     </div>
   );

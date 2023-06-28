@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 import GlassButton from "./GlassButton";
 
-const previous = require("../assets/icons/chevron-left.svg");
-const next = require("../assets/icons/chevron-right.svg");
-const info = require("../assets/icons/info.svg");
-const github = require("../assets/icons/github.svg");
-const like = require("../assets/icons/heart.svg");
-const project1 = require("../assets/landscape/20201227_183239.jpg");
+import previous from "../assets/icons/chevron-left.svg";
+import next from "../assets/icons/chevron-right.svg";
+import info from "../assets/icons/info.svg";
+import github from "../assets/icons/github.svg";
+import like from "../assets/icons/heart.svg";
+import project1 from "../assets/landscape/20201227_183239.jpg";
 
 const GlassProjects = ({ title, image, onClose, description }) => {
   const [isLiked, setIsLiked] = useState(false);

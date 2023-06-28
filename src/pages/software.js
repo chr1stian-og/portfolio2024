@@ -6,11 +6,11 @@ import GlassProjects from "../components/GlassProjects";
 import Cursor from "../components/Cursor.js";
 import { Link } from "react-router-dom";
 
-const back = require("../assets/icons/back.svg");
-const pauseIcon = require("../assets/icons/pause-circle.svg");
-const playIcon = require("../assets/icons/play.svg");
-const downloadIcon = require("../assets/icons/download.svg");
-const github = require("../assets/icons/github.svg");
+import back from "../assets/icons/back.svg";
+import pauseIcon from "../assets/icons/pause-circle.svg";
+import playIcon from "../assets/icons/play.svg";
+import downloadIcon from "../assets/icons/download.svg";
+import github from "../assets/icons/github.svg";
 
 const Software = () => {
   const handleClick = () => {

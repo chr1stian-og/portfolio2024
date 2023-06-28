@@ -7,9 +7,9 @@ import GlassFrame from "../components/GlassFrame.js";
 import { motion } from "framer-motion";
 import Cursor from "../components/Cursor.js";
 
-const pauseIcon = require("../assets/icons/pause-circle.svg");
-const playIcon = require("../assets/icons/play-circle.svg");
-const downArrow = require("../assets/icons/chevron-down.svg");
+import pauseIcon from "../assets/icons/pause-circle.svg";
+import playIcon from "../assets/icons/play-circle.svg";
+import downArrow from "../assets/icons/chevron-down.svg";
 
 const Home = () => {
   const [playing, setPlaying] = useState(false);
@@ -30,8 +30,8 @@ const Home = () => {
 
         {/* <Navbar type="home" name="CHRISTIAN" router={router} /> */}
         <Navbar type="home" name="CHRISTIAN" />
-        <main className="relative z-10 flex flex-col items-center justify-center h-full">
-          <div className="flex flex-row align-center items-center justify-center gap-8">
+        <main className="relative z-10 flex flex-col items-center justify-center h-3/4 sm:h-full">
+          <div className="flex flex-row align-center items-center justify-center gap-8 h-1/2">
             <div className="glass-frame">
               <h1
                 // onMouseEnter={textEnter}
@@ -47,18 +47,15 @@ const Home = () => {
                     typewriter
                       .pauseFor(1000)
                       .changeDeleteSpeed(5000)
-
-                      .typeString("Developer")
+                      .typeString("SOFTWARE ENGINEER")
                       .pauseFor(1500)
                       .deleteAll()
                       .pauseFor(1500)
-
-                      .typeString("Designer")
+                      .typeString("UX/UI Designer")
                       .pauseFor(1500)
                       .deleteAll()
                       .pauseFor(1500)
-
-                      .typeString("Network Engineer")
+                      .typeString("NETWORK ENGINEER")
                       .pauseFor(1500)
                       .deleteAll()
                       .typeString("")

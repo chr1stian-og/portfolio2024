@@ -5,14 +5,14 @@ import Cursor from "../components/Cursor.js";
 import Navbar from "../components/Navbar.js";
 import Carousel from "../components/Carousel.js";
 
-const back = require("../assets/icons/back.svg");
-const pauseIcon = require("../assets/icons/pause-circle.svg");
-const playIcon = require("../assets/icons/play.svg");
-const downloadIcon = require("../assets/icons/download.svg");
+import back from "../assets/icons/back.svg";
+import pauseIcon from "../assets/icons/pause-circle.svg";
+import playIcon from "../assets/icons/play.svg";
+import downloadIcon from "../assets/icons/download.svg";
 
-const previous = require("../assets/icons/chevron-left.svg");
-const next = require("../assets/icons/chevron-right.svg");
-const info = require("../assets/icons/info.svg");
+import previous from "../assets/icons/chevron-left.svg";
+import next from "../assets/icons/chevron-right.svg";
+import info from "../assets/icons/info.svg";
 
 const Photography = () => {
   const [playing, setPlaying] = useState(true);

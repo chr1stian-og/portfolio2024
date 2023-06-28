@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 
-const pauseIcon = require("../assets/icons/pause-circle.svg");
-const playIcon = require("../assets/icons/play-circle.svg");
-const github = require("../assets/icons/github.svg");
+import pauseIcon from "../assets/icons/pause-circle.svg";
+import playIcon from "../assets/icons/play-circle.svg";
+import github from "../assets/icons/github.svg";
 
-const clubnetlogo = require("../assets/clubnet-black.png");
+import clubnetlogo from "../assets/clubnet-black.png";
 
 const GlassButton = ({
   text,
