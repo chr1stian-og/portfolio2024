@@ -10,6 +10,7 @@ import Cursor from "../components/Cursor.js";
 import pauseIcon from "../assets/icons/pause-circle.svg";
 import playIcon from "../assets/icons/play-circle.svg";
 import downArrow from "../assets/icons/chevron-down.svg";
+import Footer from "../components/Footer.js";
 
 const Home = () => {
   const [playing, setPlaying] = useState(false);
@@ -67,7 +68,7 @@ const Home = () => {
           </div>
         </main>
 
-        <div className="absolute bottom-6 w-full z-10">
+        <div className="absolute bottom-2 w-full z-10">
           <center>
             <GlassButton
               playing={playing}

@@ -45,7 +45,7 @@ const Navbar = ({ type, name, image }) => {
           </Link>
         </>
       ) : (
-        <span className="glass-text-bold">{type}</span>
+        <span className="text-xl text-white">{type}</span>
       )}
       {/* </div> */}
       <div className="min-w-fit">

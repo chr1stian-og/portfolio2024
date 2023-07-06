@@ -47,7 +47,24 @@ function Contact() {
 
         <Navbar image={back} type="CONTACT" />
         <main className="flex flex-col items-center justify-center h-screen">
-          <form>
+          <div className="flex flex-col gap-4">
+            <div className="flex flex-col items-center align-center">
+              <h1 className="text-2xl font-bold text-[white]">Direct</h1>
+              <h1 className="mix-blend-overlay text-white">
+                christianmacarthur17@gmail.com
+              </h1>
+            </div>
+            <div className="flex flex-col items-center align-center">
+              <h1 className="text-2xl font-bold text-white">Photo</h1>
+              <h1 className="mix-blend-overlay text-white">cdk@gmail.com</h1>
+            </div>
+            <div className="flex flex-col items-center align-center">
+              <h1 className="text-2xl font-bold text-white">Social</h1>
+              <h1 className="mix-blend-overlay text-white">chr1stian.og</h1>
+            </div>
+          </div>
+
+          {/* <form>
             <div className="glass-frame flex flex-col items-center gap-10 sm:gap-10">
               <div className="flex flex-col gap-1 sm:gap-4 rounded-xl px-4 py-2 min-w-full  sm:min-w-[500px]">
                 <div className="flex flex-col gap-1 sm:gap-2">
@@ -103,7 +120,7 @@ function Contact() {
                 </button>
               </div>
             </div>
-          </form>
+          </form> */}
         </main>
       </div>
     </>
