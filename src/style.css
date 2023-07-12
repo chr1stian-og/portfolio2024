@@ -193,15 +193,15 @@
   padding: 8px 16px;
 }
 
-.cursor {
+/* .cursor {
   background: linear-gradient(
     113.46deg,
     rgba(142, 142, 142, 0.45) -18.03%,
     rgba(222, 222, 222, 0.18) 100.79%
   );
-  background-blend-mode: overlay, normal;
+  background-blend-mode: overlay, normal; */
   /* box-shadow: 21px 22px 68px 43px rgba(0, 0, 0, 0.1); */
-  backdrop-filter: blur(8px);
+  /* backdrop-filter: blur(8px);
   height: 32px;
   width: 32px;
   border-radius: 50%;
@@ -209,8 +209,8 @@
   top: 0;
   left: 0;
   pointer-events: none;
-  z-index: 40;
-}
+  z-index: 40; */
+/* } */
 
 .Typewriter__wrapper {
   font-family: "sf-pro-bold";

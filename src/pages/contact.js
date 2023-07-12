@@ -11,6 +11,10 @@ import pauseIcon from "../assets/icons/pause-circle.svg";
 import playIcon from "../assets/icons/play.svg";
 import downloadIcon from "../assets/icons/download.svg";
 
+import twitter from "../assets/icons/twitter.png";
+import instagram from "../assets/icons/instagram.png";
+import threads from "../assets/icons/threads.png";
+
 function Contact() {
   const handleClick = () => {
     alert("Clicked");
@@ -61,6 +65,17 @@ function Contact() {
             <div className="flex flex-col items-center align-center">
               <h1 className="text-2xl font-bold text-white">Social</h1>
               <h1 className="mix-blend-overlay text-white">chr1stian.og</h1>
+              <div className="flex mt-4 flex-row gap-4 items-center justify-center">
+                <span onClick={()=> window.open("https://twitter.com/chr1stian_og/", "_blank")} className="p-2  rounded-badge bg-gray-400 z-50 bg-mix-blend-overlay cursor-pointer">
+                  <img src={twitter} className="w-5 h-5 " />
+                </span>
+                <span onClick={()=> window.open("https://www.instagram.com/chr1stian.og/", "_blank")} className="p-2 rounded-badge bg-gray-400 z-50 bg-mix-blend-overlay cursor-pointer">
+                  <img src={instagram} className="w-5 h-5 " />
+                </span>
+                <span onClick={()=> window.open("https://www.instagram.com/chr1stian.og/", "_blank")} className="p-2 rounded-badge bg-gray-400 z-50 bg-mix-blend-overlay cursor-pointer">
+                  <img src={threads} className="w-5 h-5 " />
+                </span>
+              </div>
             </div>
           </div>
 
