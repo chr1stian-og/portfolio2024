@@ -41,7 +41,7 @@ const Photography = () => {
 
   return (
     <>
-      <Cursor isVisible={false} />
+      {/* <Cursor isVisible={false} /> */}
 
       <div className="relative h-screen overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full">

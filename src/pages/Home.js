@@ -37,7 +37,7 @@ const Home = () => {
               <h1
                 // onMouseEnter={textEnter}
                 // onMouseLeave={textLeave}
-                className="glass-text-main"
+                className="glass-text-main duration-500 transition-all"
               >
                 Christian MacArthur
               </h1>

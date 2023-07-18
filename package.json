@@ -19,7 +19,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "upload": "npm run build && tar -zcvf build.tar.gz build/ && scp build.tar.gz root@65.21.165.114:/var/www/html/portfolio/ && rm build.tar.gz",
+    "upload": "npm run build && tar -zcvf build.tar.gz build/ && scp -P 2022 build.tar.gz root@65.21.165.114:/var/www/html/portfolio/ && rm build.tar.gz",
     "push": "git add . && git commit -am . && git push origin main"
   },
   "eslintConfig": {

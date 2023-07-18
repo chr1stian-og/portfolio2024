@@ -5,7 +5,7 @@ const Navbar = ({ type, name, image }) => {
   const randomSuggestion = Math.random() < 0.5 ? "SOFTWARE" : "PHOTOGRAPHY";
 
   return (
-    <div className="flex-col items-end flex sm:flex-row justify-between sm:items-center mx-8 lg:mx-16 mt-4  min-w-fit gap-4">
+    <div className="flex-col items-end flex sm:flex-row transition-all duration-500 justify-between sm:items-center mx-8 lg:mx-16 mt-4  min-w-fit gap-4">
       <div className="min-w-fit">
         {type !== "home" && (
           <Link to="/">
