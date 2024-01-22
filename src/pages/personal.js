@@ -23,7 +23,7 @@ const Personal = () => {
 
       <div className="relative h-screen overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full">
-          <Background />
+          {/* <Background /> */}
         </div>
 
         <Navbar type="PERSONAL" image={back} />

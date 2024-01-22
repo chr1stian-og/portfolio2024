@@ -6,7 +6,7 @@ import next from "../assets/icons/chevron-right.svg";
 import info from "../assets/icons/info.svg";
 import github from "../assets/icons/github.svg";
 import like from "../assets/icons/heart.svg";
-import project1 from "../assets/landscape/20201227_183239.jpg";
+// import project1 from "../assets/landscape/20201227_183239.jpg";
 import Carousel from "./Carousel";
 
 const GlassProjects = ({ title, image, onClose, description }) => {

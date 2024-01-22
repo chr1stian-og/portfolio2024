@@ -4,33 +4,33 @@
 
 @font-face {
   font-family: "sf-pro-regular";
-  src: url("./assets/fonts/SF-Pro-Display-Regular.otf");
+  src: url("./assets/fonts/sfpro/SF-Pro-Display-Regular.otf");
 }
 
 @font-face {
   font-family: "sf-pro-bold";
-  /* src: url("./assets/fonts/SF-Pro-Display-Bold.otf"); */
-  src: url("./assets/fonts/Hubot-Sans-Light.otf");
+  /* src: url("./assets/fonts/sfpro/SF-Pro-Display-Bold.otf"); */
+  src: url("./assets/fonts/hubot/Hubot-Sans-Light.otf");
 }
 
 @font-face {
   font-family: "sf-pro-semibold";
-  src: url("./assets/fonts/SF-Pro-Display-Semibold.otf");
+  src: url("./assets/fonts/sfpro/SF-Pro-Display-Semibold.otf");
 }
 
 @font-face {
   font-family: "sf-pro-medium";
-  src: url("./assets/fonts/SF-Pro-Display-Medium.otf");
+  src: url("./assets/fonts/sfpro/SF-Pro-Display-Medium.otf");
 }
 
 @font-face {
   font-family: "sf-pro-light";
-  src: url("./assets/fonts/SF-Pro-Display-Light.otf");
+  src: url("./assets/fonts/sfpro/SF-Pro-Display-Light.otf");
 }
 
 @font-face {
   font-family: "sf-pro-thin";
-  src: url("./assets/fonts/SF-Pro-Display-Thin.otf");
+  src: url("./assets/fonts/sfpro/SF-Pro-Display-Thin.otf");
 }
 
 * {
@@ -200,8 +200,8 @@
     rgba(222, 222, 222, 0.18) 100.79%
   );
   background-blend-mode: overlay, normal; */
-  /* box-shadow: 21px 22px 68px 43px rgba(0, 0, 0, 0.1); */
-  /* backdrop-filter: blur(8px);
+/* box-shadow: 21px 22px 68px 43px rgba(0, 0, 0, 0.1); */
+/* backdrop-filter: blur(8px);
   height: 32px;
   width: 32px;
   border-radius: 50%;

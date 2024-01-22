@@ -1,73 +1,79 @@
-import React, { useEffect, useState } from "react";
+function Background() {
+  return <></>;
+}
 
-const landscapeImages = [
-  "../assets/images/landscape/IMG_6328.jpg",
-  "../assets/images/landscape/IMG_6323.jpg",
-  "../assets/images/landscape/IMG_0234.jpg",
-  "../assets/images/landscape/IMG_6324.jpg",
-  "../assets/images/landscape/IMG_4605.jpg",
-];
-const portraitImages = [
-  "../assets/images/portrait/IMG_0236.jpg",
-  "../assets/images/portrait/IMG_0237.jpg",
-  "../assets/images/portrait/IMG_0597.jpg",
-  "../assets/images/portrait/IMG_7036.jpg",
-  "../assets/images/portrait/IMG_2052.jpg",
-];
+export default Background;
 
-const image2 = require("../assets/images/landscape/IMG_6324.jpg");
+// import React, { useEffect, useState } from "react";
 
-const BackgroundImage = ({ status, timer }) => {
-  const [currentImageFile, setCurrentImageFile] = useState(landscapeImages);
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+// const landscapeImages = [
+//   "../assets/images/landscape/IMG_6328.jpg",
+//   "../assets/images/landscape/IMG_6323.jpg",
+//   "../assets/images/landscape/IMG_0234.jpg",
+//   "../assets/images/landscape/IMG_6324.jpg",
+//   "../assets/images/landscape/IMG_4605.jpg",
+// ];
+// const portraitImages = [
+//   "../assets/images/portrait/IMG_0236.jpg",
+//   "../assets/images/portrait/IMG_0237.jpg",
+//   "../assets/images/portrait/IMG_0597.jpg",
+//   "../assets/images/portrait/IMG_7036.jpg",
+//   "../assets/images/portrait/IMG_2052.jpg",
+// ];
 
-  useEffect(() => {
-    if (status) {
-      const interval = setInterval(() => {
-        setCurrentImageIndex(
-          (prevIndex) => (prevIndex + 1) % currentImageFile.length
-        );
-      }, timer);
+// const image2 = require("../assets/images/landscape/IMG_6324.jpg");
 
-      return () => {
-        clearInterval(interval);
-      };
-    }
-  }, [status, timer, currentImageFile.length]);
+// const BackgroundImage = ({ status, timer }) => {
+//   const [currentImageFile, setCurrentImageFile] = useState(landscapeImages);
+//   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  useEffect(() => {
-    if (currentImageFile && currentImageFile.length > 0) {
-      setCurrentImageFile(currentImageFile);
-    }
-  }, [currentImageIndex, currentImageFile]);
+//   useEffect(() => {
+//     if (status) {
+//       const interval = setInterval(() => {
+//         setCurrentImageIndex(
+//           (prevIndex) => (prevIndex + 1) % currentImageFile.length
+//         );
+//       }, timer);
 
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      try {
-        if (window.innerWidth >= 768) {
-          setCurrentImageFile(landscapeImages);
-        } else {
-          setCurrentImageFile(portraitImages);
-        }
-      } catch (e) {
-        setCurrentImageFile(landscapeImages);
-      }
-    }
-  }, []);
+//       return () => {
+//         clearInterval(interval);
+//       };
+//     }
+//   }, [status, timer, currentImageFile.length]);
 
-  const image = currentImageFile[currentImageIndex];
+//   useEffect(() => {
+//     if (currentImageFile && currentImageFile.length > 0) {
+//       setCurrentImageFile(currentImageFile);
+//     }
+//   }, [currentImageIndex, currentImageFile]);
 
-  return (
-    <div className="top-0 left-0 w-screen h-screen overflow-hidden">
-      <div className="w-full h-full absolute inset-0 z-[-1]">
-        <img
-          src={image2}
-          alt="Background Image"
-          className="object-cover w-full h-full"
-        />
-      </div>
-    </div>
-  );
-};
+//   useEffect(() => {
+//     if (typeof window !== "undefined") {
+//       try {
+//         if (window.innerWidth >= 768) {
+//           setCurrentImageFile(landscapeImages);
+//         } else {
+//           setCurrentImageFile(portraitImages);
+//         }
+//       } catch (e) {
+//         setCurrentImageFile(landscapeImages);
+//       }
+//     }
+//   }, []);
 
-export default BackgroundImage;
+//   const image = currentImageFile[currentImageIndex];
+
+//   return (
+//     <div className="top-0 left-0 w-screen h-screen overflow-hidden">
+//       <div className="w-full h-full absolute inset-0 z-[-1]">
+//         {/* <img
+//           src={image2}
+//           alt="Background Image"
+//           className="object-cover w-full h-full"
+//         /> */}
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default BackgroundImage;

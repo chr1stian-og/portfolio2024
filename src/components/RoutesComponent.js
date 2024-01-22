@@ -1,9 +1,9 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import Personal from "../pages/Personal";
-import Photography from "../pages/Photography";
-import Software from "../pages/Software";
-import Contact from "../pages/Contact";
+import Personal from "../pages/personal";
+import Photography from "../pages/photography";
+import Software from "../pages/software";
+import Contact from "../pages/contact";
 import Home from "../pages/Home";
 
 function RoutesComponent() {

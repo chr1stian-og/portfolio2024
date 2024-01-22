@@ -1,4 +1,4 @@
-import Background from "../components/Background.js";
+// import Background from "../components/Background.js";
 import Navbar from "../components/Navbar.js";
 import GlassButton from "../components/GlassButton.js";
 import { useEffect, useState } from "react";
@@ -26,7 +26,7 @@ const Home = () => {
 
       <div className="relative h-screen overflow-hidden ">
         <div className="absolute top-0 left-0 w-full h-full">
-          <Background status={playing} timer={2500} />
+          {/* <Background status={playing} timer={2500} /> */}
         </div>
 
         {/* <Navbar type="home" name="CHRISTIAN" router={router} /> */}
