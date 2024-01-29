@@ -1,10 +1,17 @@
+import React, { useEffect, useState } from "react";
+import imageSrc from "../assets/images/_DSC4508.jpg";
+
 function Background() {
-  return <></>;
+  return (
+    <div className="top-0 left-0 w-screen h-screen overflow-hidden">
+      <div className="w-full h-full absolute inset-0 z-[-1] opacity-50">
+        <img src={imageSrc} alt="Description of the image" />
+      </div>
+    </div>
+  );
 }
 
 export default Background;
-
-// import React, { useEffect, useState } from "react";
 
 // const landscapeImages = [
 //   "../assets/images/landscape/IMG_6328.jpg",
