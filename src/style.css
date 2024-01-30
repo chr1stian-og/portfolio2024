@@ -3,10 +3,14 @@
 @tailwind utilities;
 
 @font-face {
+  font-family: "adobe-hebrew";
+  src: url("./assets/fonts/hebrew/Adobe\ Hebrew\ Regular.otf");
+}
+
+@font-face {
   font-family: "sf-pro-regular";
   src: url("./assets/fonts/sfpro/SF-Pro-Display-Regular.otf");
 }
-
 @font-face {
   font-family: "sf-pro-bold";
   /* src: url("./assets/fonts/sfpro/SF-Pro-Display-Bold.otf"); */
@@ -33,6 +37,10 @@
   src: url("./assets/fonts/sfpro/SF-Pro-Display-Thin.otf");
 }
 
+body {
+  overflow: hidden;
+}
+
 * {
   font-family: "sf-pro-regular";
   font-size: 16px;
@@ -40,6 +48,10 @@
   margin: 0;
   padding: 0;
   /* cursor: none; */
+}
+
+.main-text {
+  font-family: "adobe-hebrew";
 }
 
 .glass-text-header {
