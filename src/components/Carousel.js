@@ -1,61 +1,37 @@
 import React, { Component } from "react";
-
-// import image1 from "../assets/images/landscape/projects.png";
-// import image2 from "../assets/images/landscape/IMG_6328.jpg";
-// import image3 from "../assets/images/landscape/IMG_6324.jpg";
-// import image4 from "../assets/images/landscape/IMG_4605.jpg";
+import GlassProjects from "./GlassProjects";
 
 function Carousel() {
   return (
     <>
-      <div className="carousel rounded-md max-w-fit">
-        <div id="slide1" className="carousel-item relative w-full">
-          {/* <img src={image1} className="w-full" /> */}
-          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide4" className="text-2xl text-[#cacaca79]">
-              ❮
-            </a>
-            <a href="#slide2" className="text-2xl text-[#cacaca79]">
-              ❯
-            </a>
-          </div>
+      <div className="h-[600px] carousel carousel-vertical rounded-box gap-y-96">
+        <div className="carousel-item h-full justify-center">
+          <h1 className="text-white text-xl sm:text-5xl w-96 sm:w-[1000px] main-text transition-all duration-300">
+            Software Engineer Skilled in Applying Expertise in the Development
+            of Systems
+          </h1>
         </div>
-        {/* 
-        <div id="slide2" className="carousel-item relative w-full">
-          <img src={image2} className="w-full" />
-          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide1" className="text-2xl text-[#cacaca79]">
-              ❮
-            </a>
-            <a href="#slide3" className="text-2xl text-[#cacaca79]">
-              ❯
-            </a>
-          </div>
-        </div> */}
-
-        {/* <div id="slide3" className="carousel-item relative w-full">
-          <img src={image3} className="w-full" />
-          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide2" className="text-2xl text-[#cacaca79]">
-              ❮
-            </a>
-            <a href="#slide4" className="text-2xl text-[#cacaca79]">
-              ❯
-            </a>
-          </div>
-
+        <div className="carousel-item h-full">
+          <GlassProjects />
         </div>
-        <div id="slide4" className="carousel-item relative w-full">
-          <img src={image4} className="w-full" />
-          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide3" className="text-2xl text-[#cacaca79]">
-              ❮
-            </a>
-            <a href="#slide1" className="text-2xl text-[#cacaca79]">
-              ❯
-            </a>
-          </div>
-        </div> */}
+        <div className="carousel-item h-full">
+          <GlassProjects />
+        </div>
+        <div className="carousel-item h-full">
+          <GlassProjects />
+        </div>
+        <div className="carousel-item h-full">
+          <GlassProjects />
+        </div>
+        <div className="carousel-item h-full">
+          <GlassProjects />
+        </div>
+        <div className="carousel-item h-full">
+          <GlassProjects />
+        </div>
+        <div className="carousel-item h-full">
+          <GlassProjects />
+        </div>
       </div>
     </>
   );

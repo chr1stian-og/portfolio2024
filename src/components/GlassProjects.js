@@ -8,13 +8,13 @@ function GlassProjects() {
             alt="car!"
           />
         </figure>
-          <div className="card-body">
-            <h2 className="card-title">Email tester</h2>
-            {/* <p>How to park your car at your garage?</p> */}
-            <div className="card-actions justify-end">
-              <button className="btn btn-primary">Github</button>
-            </div>
+        {/* <div className="card-body">
+          <h2 className="card-title">Email tester</h2>
+          <p>How to park your car at your garage?</p>
+          <div className="card-actions justify-end">
+            <button className="btn btn-primary">Github</button>
           </div>
+        </div> */}
       </div>
     </>
   );
