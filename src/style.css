@@ -8,11 +8,6 @@
 }
 
 @font-face {
-  font-family: "coolvetica";
-  src: url("./assets/fonts/coolvetica/CoolveticaBk-Regular.ttf");
-}
-
-@font-face {
   font-family: "sf-pro-regular";
   src: url("./assets/fonts/sfpro/SF-Pro-Display-Regular.otf");
 }
@@ -76,8 +71,7 @@ body {
 .glass-navbar {
   font-family: "sf-pro-bold";
   color: rgba(255, 255, 255);
-  font-size: 12px;
-  letter-spacing: 2px;
+  font-size: 10px;
   /* mix-blend-mode: overlay; */
 }
 
@@ -88,16 +82,16 @@ body {
   color: rgba(255, 255, 255);
 }
 .glass-title {
-  font-family: "coolvetica";
-  font-size: 16px;
-  letter-spacing: 2px;
+  font-family: "sf-pro-bold";
+  font-size: 12px;
+  text-transform: uppercase;
   color: rgba(255, 255, 255);
 }
 .glass-description {
-  font-family: "coolvetica";
-  font-size: 14px;
-  color: rgba(255, 255, 255);
-  letter-spacing: 1.5px;
+  font-family: "sf-pro-bold";
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.4);
+  text-transform: uppercase;
   /* mix-blend-mode: overlay; */
 }
 

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Navbar = ({ type, name, image }) => {
   return (
     <div className="fixed top-0 left-0 w-full z-50 ">
-      <div className="flex-col items-end flex sm:flex-row transition-all duration-500 justify-between sm:items-center mx-8 lg:mx-8 mt-4 min-w-fit gap-4">
+      <div className="flex-col items-end flex sm:flex-row transition-all duration-500 justify-between sm:items-center mx-8 lg:mx-8 mt-4 min-w-fit gap-2 sm:gap-4 ">
         <div className="min-w-fit">
           {type !== "home" && (
             <>
