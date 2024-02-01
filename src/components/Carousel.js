@@ -7,7 +7,7 @@ function Carousel() {
       <div className="w-[600px] sm:w-[1000px] h-full carousel carousel-vertical">
         <div className="carousel-item h-full mt-96">
           <div className="flex justify-center items-center z-50">
-            <h1 className=" text-white glass-main text-xl hover:cursor-default sm:text-6xl transition-all duration-300">
+            <h1 className="text-white glass-main text-xl hover:cursor-default sm:text-6xl transition-all duration-300">
               Software Engineer Skilled in Applying Expertise in the Development
               of Systems
             </h1>
