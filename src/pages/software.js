@@ -22,7 +22,7 @@ const Software = () => {
       {/* <Cursor isVisible={false} /> */}
       <div className="relative h-screen overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full">
-          <Background opacity="10" />
+          <Background />
         </div>
         <Navbar type="software" image={back} />
 
