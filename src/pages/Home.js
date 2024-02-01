@@ -11,27 +11,14 @@ const Home = () => {
         <div className="absolute top-0 left-0 w-full h-full">
           <Background />
         </div>
-        <Navbar type="home" />
-        <main className="relative flex flex-col items-center justify-center h-3/4 sm:h-full z-30">
-            <img src={arrowDown} className="text-white text-3xl w-10"/>
-          <center>
-            <div className="mt-80">
-
-            <Carousel />
-            </div>
-            {/* <h1 className="text-white text-xl sm:text-5xl w-96 sm:w-[1000px] main-text transition-all duration-300">
-              Software Engineer Skilled in Applying Expertise in the Development
-              of Systems
-            </h1> */}
-          </center>
+        <Navbar type="home"/>
+        {/* <h1 className="mb-96 absolute text-white text-xl sm:text-5xl w-96 sm:w-[850px] main-text transition-all duration-300 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+          Software Engineer Skilled in Applying Expertise in the Development of
+          Systems
+        </h1> */}
+        <main className="flex flex-col items-center h-full w-full z-30 ">
+          <Carousel />
         </main>
-        {/* <center>
-          <div className="flex flex-col justify-center">
-            <GlassProjects />
-            <GlassProjects />
-            <GlassProjects />
-          </div>
-        </center> */}
       </div>
     </>
   );

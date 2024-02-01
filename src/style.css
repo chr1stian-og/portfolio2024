@@ -8,6 +8,11 @@
 }
 
 @font-face {
+  font-family: "coolvetica";
+  src: url("./assets/fonts/coolvetica/CoolveticaBk-Regular.ttf");
+}
+
+@font-face {
   font-family: "sf-pro-regular";
   src: url("./assets/fonts/sfpro/SF-Pro-Display-Regular.otf");
 }
@@ -54,6 +59,9 @@ body {
   font-family: "adobe-hebrew";
 }
 
+.bg-glow {
+  box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+}
 .glass-text-header {
   font-family: "sf-pro-bold";
   font-size: 50px;
@@ -65,17 +73,32 @@ body {
   mix-blend-mode: color-dodge;
 }
 
-.glass-text-bold {
+.glass-navbar {
   font-family: "sf-pro-bold";
-  font-size: 18px;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255);
+  font-size: 12px;
   letter-spacing: 2px;
-  mix-blend-mode: overlay;
+  /* mix-blend-mode: overlay; */
 }
 
-.glass-text-bold:hover {
+.glass-main {
+  font-family: "adobe hebrew";
+  font-size: 16px;
+  letter-spacing: 2px;
   color: rgba(255, 255, 255);
-  mix-blend-mode: color-dodge;
+}
+.glass-title {
+  font-family: "coolvetica";
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255);
+}
+.glass-description {
+  font-family: "coolvetica";
+  font-size: 14px;
+  color: rgba(255, 255, 255);
+  letter-spacing: 1.5px;
+  /* mix-blend-mode: overlay; */
 }
 
 .glass-text {
@@ -120,8 +143,8 @@ body {
 .glass-button {
   background: linear-gradient(
     113.46deg,
-    rgba(234, 234, 234, 0.45) -18.03%,
-    rgba(222, 222, 222, 0.48) 150.79%
+    rgba(0, 0, 0, 0.45) -18.03%,
+    rgba(32, 32, 32, 0.48) 150.79%
   );
   background-blend-mode: overlay, normal;
   mix-blend-mode: overlay;
@@ -268,9 +291,6 @@ body {
     direction: "column";
   }
 
-  .glass-text-bold {
-    font-size: 16px;
-  }
   .glass-text-button {
     font-size: 16px;
   }

@@ -25,7 +25,7 @@ const Software = () => {
         <div className="absolute top-0 left-0 w-full h-full">
           <Background />
         </div>
-        <Navbar type="SOFTWARE" image={back} />
+        <Navbar type="software" image={back} />
         <main className="relative z-10 flex flex-col items-center justify-center h-full">
           <GlassProjects
             title="Email-tester"

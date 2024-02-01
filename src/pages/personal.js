@@ -19,25 +19,30 @@ const Personal = () => {
 
   return (
     <>
-      {/* <Cursor isVisible={false} /> */}
-
       <div className="relative h-screen overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full">
-          {/* <Background /> */}
+          <Background opacity={50}/>
         </div>
+        {/* <Cursor isVisible={false} /> */}
 
-        <Navbar type="PERSONAL" image={back} />
-        <main className="relative z-10 flex flex-col items-center justify-center h-full">
-          <div className="flex flex-row align-center items-center justify-center gap-8">
-            <Link
-              target="_blank"
-              to="https://github.com/chr1stian-og/Certificates"
-            >
-              <h1 className="glass-text-bold">View Certificates</h1>
-            </Link>
-            <GlassButton text="Download CV" type="textButton" />
+        <div className="relative h-screen overflow-hidden">
+          <div className="absolute top-0 left-0 w-full h-full">
+            {/* <Background /> */}
           </div>
-        </main>
+
+          <Navbar type="PERSONAL" image={back} />
+          <main className="relative z-10 flex flex-col items-center justify-center h-full">
+            <div className="flex flex-row align-center items-center justify-center gap-8">
+              <Link
+                target="_blank"
+                to="https://github.com/chr1stian-og/Certificates"
+              >
+                <h1 className="glass-text-bold">View Certificates</h1>
+              </Link>
+              <GlassButton text="Download CV" type="textButton" />
+            </div>
+          </main>
+        </div>
       </div>
     </>
   );

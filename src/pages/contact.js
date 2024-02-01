@@ -53,17 +53,17 @@ function Contact() {
         <main className="flex flex-col items-center justify-center h-screen">
           <div className="flex flex-col gap-4">
             <div className="flex flex-col items-center align-center">
-              <h1 className="text-2xl font-bold text-[white]">Direct</h1>
+              <h1 className="text-2xl font-bold text-[white]">Email</h1>
               <h1 className="mix-blend-overlay text-white">
                 christianmacarthur17@gmail.com
               </h1>
             </div>
-            <div className="flex flex-col items-center align-center">
+            {/* <div className="flex flex-col items-center align-center">
               <h1 className="text-2xl font-bold text-white">Photo</h1>
               <h1 className="mix-blend-overlay text-white">cdk@gmail.com</h1>
-            </div>
+            </div> */}
             <div className="flex flex-col items-center align-center">
-              <h1 className="text-2xl font-bold text-white">Social</h1>
+              {/* <h1 className="text-2xl font-bold text-white">Social</h1> */}
               <h1 className="mix-blend-overlay text-white">chr1stian.og</h1>
               <div className="flex mt-4 flex-row gap-4 items-center justify-center">
                 <span onClick={()=> window.open("https://twitter.com/chr1stian_og/", "_blank")} className="p-2  rounded-badge bg-gray-400 z-50 bg-mix-blend-overlay cursor-pointer">

@@ -1,22 +1,24 @@
-function GlassProjects() {
+function GlassProjects({ title, description, image, link }) {
   return (
-    <>
+    <div className="flex justify-center items-center">
       <div className="card mx-12 w-full ">
-        <figure>
-          <img
-            src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-            alt="car!"
-          />
-        </figure>
-        {/* <div className="card-body">
-          <h2 className="card-title">Email tester</h2>
-          <p>How to park your car at your garage?</p>
-          <div className="card-actions justify-end">
-            <button className="btn btn-primary">Github</button>
-          </div>
-        </div> */}
+        <img
+          className="bg-glow"
+          src={
+            image
+              ? image
+              : "https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+          }
+        />
+        <h2
+          className="card-title glass-title hover:underline hover:cursor-pointer"
+          onClick={() => window.open(link)}
+        >
+          {title}
+        </h2>
+        <p className="glass-description">{description} </p>
       </div>
-    </>
+    </div>
   );
 }
 
