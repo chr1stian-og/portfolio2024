@@ -7,7 +7,7 @@ function Background({ opacity }) {
       <img
         src={imageSrc}
         alt="Description of the image"
-        className={`w-full h-full object-cover opacity-30`}
+        className={`w-full h-full object-cover opacity-${opacity}`}
       />
     </div>
   );

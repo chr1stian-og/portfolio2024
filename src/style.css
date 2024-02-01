@@ -6,6 +6,10 @@
   font-family: "adobe-hebrew";
   src: url("./assets/fonts/hebrew/Adobe\ Hebrew\ Regular.otf");
 }
+@font-face {
+  font-family: "garamond";
+  src: url("./assets/fonts/garamond/Garamond\ Regular.ttf");
+}
 
 @font-face {
   font-family: "sf-pro-regular";
@@ -50,10 +54,6 @@ body {
   /* cursor: none; */
 }
 
-.main-text {
-  font-family: "adobe-hebrew";
-}
-
 .bg-glow {
   box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
 }
@@ -76,19 +76,21 @@ body {
 }
 
 .glass-main {
-  font-family: "adobe hebrew";
-  font-size: 16px;
-  letter-spacing: 2px;
+  font-family: "garamond";
+  /* letter-spacing: 2px; */
   color: rgba(255, 255, 255);
 }
 .glass-title {
   font-family: "sf-pro-bold";
   font-size: 12px;
+  letter-spacing: 1px;
   text-transform: uppercase;
   color: rgba(255, 255, 255);
 }
 .glass-description {
   font-family: "sf-pro-bold";
+  letter-spacing: 1px;
+
   font-size: 10px;
   color: rgba(255, 255, 255, 0.4);
   text-transform: uppercase;
@@ -107,17 +109,6 @@ body {
 .glass-text:hover {
   color: rgba(255, 255, 255);
   mix-blend-mode: color-dodge;
-}
-.glass-text-main {
-  font-family: "sf-pro-bold";
-  font-size: 35px;
-  font-weight: bold;
-  color: rgba(255, 255, 255, 0.7);
-  mix-blend-mode: overlay;
-  padding: 0 16px;
-  letter-spacing: 2px;
-  min-width: max-content;
-  text-transform: uppercase;
 }
 
 .glass-text-main:hover {
@@ -222,25 +213,6 @@ body {
   padding: 8px 16px;
 }
 
-/* .cursor {
-  background: linear-gradient(
-    113.46deg,
-    rgba(142, 142, 142, 0.45) -18.03%,
-    rgba(222, 222, 222, 0.18) 100.79%
-  );
-  background-blend-mode: overlay, normal; */
-/* box-shadow: 21px 22px 68px 43px rgba(0, 0, 0, 0.1); */
-/* backdrop-filter: blur(8px);
-  height: 32px;
-  width: 32px;
-  border-radius: 50%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  pointer-events: none;
-  z-index: 40; */
-/* } */
-
 .Typewriter__wrapper {
   font-family: "sf-pro-bold";
   font-size: 25px;
@@ -262,7 +234,6 @@ body {
 
 @media (max-width: 800px) {
   .glass-text-main {
-    font-size: 20px;
     white-space: nowrap; /* Prevent text from wrapping */
     overflow: hidden; /* Hide any overflowing content */
     text-overflow: ellipsis; /* Show ellipsis (...) for truncated text */

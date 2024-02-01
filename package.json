@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^13.5.0",
     "date-and-time": "^3.1.1",
     "framer-motion": "^10.12.17",
+    "image-compressor.js": "^1.1.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.14.0",
@@ -20,7 +21,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "upload": "npm run build && tar -zcvf build.tar.gz build/ && scp -P 2022 build.tar.gz root@65.21.165.114:/var/www/html/portfolio/ && rm build.tar.gz",
+    "upload": "npm run build && tar -zcvf build.tar.gz build/ && scp -i ../../../key.cer build.tar.gz root@13.246.12.22:/var/www/html/portfolio/ && rm build.tar.gz",
     "push": "git add . && git commit -am . && git push origin main"
   },
   "eslintConfig": {
