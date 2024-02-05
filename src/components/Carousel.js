@@ -4,6 +4,7 @@ import emailtester from "../assets/images/projects/emailtester.png";
 import xtools from "../assets/images/projects/xtools.png";
 import easyorder from "../assets/images/projects/easyorder.png";
 import neohacking from "../assets/images/projects/neohacking.png";
+import leureblue from "../assets/images/projects/leureblue.png";
 
 function Carousel() {
   return (
@@ -31,6 +32,14 @@ function Carousel() {
             image={xtools}
             description="Clubnet"
             link="https://xtools.christianmacarthur.com"
+          />
+        </div>
+        <div className="carousel-item h-full">
+          <GlassProjects
+            title="Leureblue"
+            image={leureblue}
+            description="Leureblue"
+            link="https://leureblue.com"
           />
         </div>
         <div className="carousel-item h-full">

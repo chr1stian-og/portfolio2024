@@ -10,6 +10,7 @@ import easyorder from "../assets/images/projects/easyorder.png";
 import neohacking from "../assets/images/projects/neohacking.png";
 import portfolio from "../assets/images/projects/portfolio.png";
 import myclubnet from "../assets/images/projects/myclubnet.png";
+import leureblue from "../assets/images/projects/leureblue.png";
 
 const Software = () => {
   const handleClick = () => {
@@ -26,7 +27,7 @@ const Software = () => {
         </div>
         <Navbar type="software" image={back} />
 
-        <main className="relative h-full flex flex-col justify-center z-50 mx-4 lg:mx-12 sm:mx-6 duration-300 transition-all">
+        <main className="relative h-full flex flex-col justify-center z-30 mx-4 lg:mx-12 sm:mx-6 duration-300 transition-all">
           <div className="flex justify-center mb-20">
             <h1 className="text-white text-xl">SOFTWARE PROJECTS</h1>
           </div>
@@ -58,6 +59,13 @@ const Software = () => {
             image={xtools}
             type="website"
             link="https://xtools.christianmacarthur.com"
+          />
+          <SoftwareProjects
+            project="Leureblue"
+            client="Leureblue"
+            image={leureblue}
+            type="website"
+            link="https://leureblue.com"
           />
           <SoftwareProjects
             project="EasyOrder"
