@@ -16,33 +16,9 @@ import instagram from "../assets/icons/instagram.svg";
 import threads from "../assets/icons/threads.png";
 import linkedin from "../assets/icons/linkedin.svg";
 import github from "../assets/icons/github.svg";
-
+import send from "../assets/icons/send.svg";
 
 function Contact() {
-  const handleClick = () => {
-    alert("Clicked");
-  };
-
-  function contactForm(e) {
-    alert("Email sent");
-    e.preventDefault();
-    // emailjs
-    //   .sendForm(
-    //     "service_uaxwktv",
-    //     "template_zhmszrn",
-    //     e.target,
-    //     "QXKIOsJR522n30JF-"
-    //   )
-    //   .then(
-    //     (result) => {
-    //       console.log("Code: ", result, "Email Sent");
-    //     },
-    //     (error) => {
-    //       console.log("Error while Sending email", error.text);
-    //     }
-    //   );
-  }
-
   return (
     <>
       {/* <Cursor isVisible={false} /> */}
@@ -53,117 +29,132 @@ function Contact() {
         </div>
 
         <Navbar image={back} type="CONTACT" />
-        <main className="flex flex-col items-center justify-center h-screen">
-          <div className="flex flex-col gap-4">
-            <div className="flex flex-col items-center align-center">
-              <h1 className="text-2xl font-bold text-[white]">Email</h1>
-              <h1 className="mix-blend-overlay text-white">
-                christianmacarthur17@gmail.com
-              </h1>
-            </div>
-            {/* <div className="flex flex-col items-center align-center">
-              <h1 className="text-2xl font-bold text-white">Photo</h1>
-              <h1 className="mix-blend-overlay text-white">cdk@gmail.com</h1>
-            </div> */}
-            <div className="flex flex-col items-center align-center">
-              <h1 className="text-2xl font-bold text-white">Socials</h1>
-              <h1 className="mix-blend-overlay text-white">chr1stian.og</h1>
-              <div className="flex mt-4 flex-row gap-4 items-center justify-center">
-                <span
-                  onClick={() =>
-                    window.open(
-                      "https://www.linkedin.com/in/christian-macarthur/",
-                      "_blank"
-                    )
-                  }
-                  className="p-2  rounded-badge  bg-black z-50 bg-mix-blend-overlay cursor-pointer"
-                >
-                  <img src={linkedin} className="w-5 h-5 " />
-                </span>
-                <span
-                  onClick={() =>
-                    window.open("https://github.com/chr1stian-og/", "_blank")
-                  }
-                  className="p-2 rounded-badge  bg-black z-50 bg-mix-blend-overlay cursor-pointer"
-                >
-                  <img src={github} className="w-5 h-5 " />
-                </span>
-                <span
-                  onClick={() =>
-                    window.open(
-                      "https://www.instagram.com/chr1stian.og/",
-                      "_blank"
-                    )
-                  }
-                  className="p-2 rounded-badge  bg-black z-50 bg-mix-blend-overlay cursor-pointer"
-                >
-                  <img src={instagram} className="w-5 h-5 " />
-                </span>
+
+        <main className="flex flex-col items-center  justify-center  h-screen">
+          <div className="flex justify-between sm:flex-row flex-col items-center gap-20 duration-200 transition-all">
+            <div className="flex flex-col items-center gap-10">
+              <div className="flex flex-col items-center align-center">
+                <h1 className="text-2xl font-bold text-[white]">Email</h1>
+                <h1 className="text-[#808080]">
+                  christianmacarthur17@gmail.com
+                </h1>
               </div>
+              <div className="flex flex-col items-center align-center">
+                <h1 className="text-2xl font-bold text-white">Socials</h1>
+                <h1 className=" text-[#808080]">chr1stian.og</h1>
+                <div className="flex mt-2 flex-row gap-4 items-center justify-center">
+                  <span
+                    onClick={() =>
+                      window.open(
+                        "https://www.linkedin.com/in/christian-macarthur/",
+                        "_blank"
+                      )
+                    }
+                    className="p-2  rounded-badge  bg-black z-50 bg-mix-blend-overlay cursor-pointer"
+                  >
+                    <img src={linkedin} className="w-5 h-5 " />
+                  </span>
+                  <span
+                    onClick={() =>
+                      window.open("https://github.com/chr1stian-og/", "_blank")
+                    }
+                    className="p-2 rounded-badge  bg-black z-50 bg-mix-blend-overlay cursor-pointer"
+                  >
+                    <img src={github} className="w-5 h-5 " />
+                  </span>
+                  <span
+                    onClick={() =>
+                      window.open(
+                        "https://www.instagram.com/chr1stian.og/",
+                        "_blank"
+                      )
+                    }
+                    className="p-2 rounded-badge  bg-black z-50 bg-mix-blend-overlay cursor-pointer"
+                  >
+                    <img src={instagram} className="w-5 h-5 " />
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div className="w-[350px] z-50">
+              <form
+                action="#"
+                // onsubmit="sendEmail(); reset(); return false"
+              >
+                <div className="row form-group">
+                  <div className="col-md-12">
+                    <input
+                      type="email"
+                      id="email"
+                      className="form-control w-full px-4 py-1 bg-[#ffffff00] text-white border-[#808080] border-2 duration-200 transition-all outline-0 "
+                      placeholder="Email"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div className="row form-group ">
+                  <div className="col-md-12 ">
+                    <input
+                      type="text"
+                      id="message"
+                      className="mt-2 h-[100px] text-start flex justify-start align-top form-control w-full px-4 py-1 text-white bg-[#ffffff00] border-[#808080] border-2 duration-200 transition-all outline-0 "
+                      placeholder="Message"
+                    />
+                  </div>
+                </div>
+
+                <div className="row form-group flex justify-end align-center items-end">
+                  <div className="btn btn-dark btn-md mt-2 min-w-full text-white">
+                    <img src={send} type="submit" value="Send" width={20} />
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
-
-          {/* <form>
-            <div className="glass-frame flex flex-col items-center gap-10 sm:gap-10">
-              <div className="flex flex-col gap-1 sm:gap-4 rounded-xl px-4 py-2 min-w-full  sm:min-w-[500px]">
-                <div className="flex flex-col gap-1 sm:gap-2">
-                  <label
-                    className="glass-text-bold sm:glass-text"
-                    style={{ textTransform: "uppercase" }}
-                  >
-                    Name
-                  </label>
-                  <input
-                    type="text"
-                    name="name"
-                    className="glass-input"
-                    // placeholder="Type your name"
-                  />
-                </div>
-                <div className="flex flex-col gap-1 sm:gap-2">
-                  <label
-                    className="glass-text-bold sm:glass-text"
-                    style={{ textTransform: "uppercase" }}
-                  >
-                    Email
-                  </label>
-                  <input
-                    type="email"
-                    name="email"
-                    className="glass-input"
-                    // placeholder="Type your email"
-                  />
-                </div>
-                <div className="flex flex-col gap-1 sm:gap-2">
-                  <label
-                    className="glass-text-bold sm:glass-text"
-                    style={{ textTransform: "uppercase" }}
-                  >
-                    Message
-                  </label>
-                  <textarea
-                    name="message"
-                    className="glass-input"
-                    // placeholder="Type a nice text..."
-                  ></textarea>
-                </div>
-              </div>
-              <div className="flex justify-end align-right items-center gap-4">
-                <Link href="/">
-                  <button className="rounded-md text-[#a4a4a4] border-[#a4a4a4] border-2 text-xl px-4 py-1">
-                    Home
-                  </button>
-                </Link>
-                <button className="bg-[#a4a4a4] border-[#a4a4a4] border-2 rounded-md text-[#4d4d4d73] text-xl px-4 py-1">
-                  Send
-                </button>
-              </div>
-            </div>
-          </form> */}
         </main>
       </div>
     </>
   );
+}
+
+{
+  /* <script>
+      function sendEmail() {
+        Email.send({
+          Host: "smtp.elasticemail.com",
+          port: 2525,
+          Username: "info@leureblue.com",
+          Password: "D6233E4BC0FE32AC947F603F7E24486D9FD3",
+          To: "leureblue@gmail.com",
+          From: "info@leureblue.com",
+          Subject:
+            document.getElementById("subject").value +
+            " - " +
+            document.getElementById("fname").value +
+            " " +
+            document.getElementById("lname").value +
+            " - " +
+            document.getElementById("email").value,
+          Body: document.getElementById("message").value,
+        }).then((message) => {
+          if (message == "OK") {
+            Swal.fire(
+              "Email sent Sucessfuly",
+              "Expect to hear from us soon",
+              "success"
+            );
+          } else {
+            Swal.fire(
+              "Error while sending email",
+              "Please try again at a later time",
+              "error"
+            );
+          }
+          console.log(message);
+        });
+      }
+    </script> */
 }
 
 export default Contact;

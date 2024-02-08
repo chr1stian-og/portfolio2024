@@ -26,7 +26,7 @@ const Navbar = ({ type, name, image }) => {
         </div>
         <Link
           to="/home"
-          onClick={() => window.location.reload()}
+          onClick={() => window.open("/", "_self")}
           className="hover:cursor-pointer"
         >
           <span className="glass-navbar cursor-pointer">
