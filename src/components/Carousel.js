@@ -22,6 +22,7 @@ function Carousel() {
           <GlassProjects
             title="Email Tester"
             description="Clubnet"
+            github_link="https://github.com/chr1stian-og/EasyOrder"
             image={emailtester}
             link="https://email.christianmacarthur.com"
           />
@@ -30,6 +31,7 @@ function Carousel() {
           <GlassProjects
             title="Xtools"
             image={xtools}
+            github_link="https://github.com/chr1stian-og/xtools"
             description="Clubnet"
             link="https://xtools.christianmacarthur.com"
           />
@@ -46,6 +48,7 @@ function Carousel() {
           <GlassProjects
             title="EasyOrder"
             image={easyorder}
+            github_link="https://github.com/chr1stian-og/EasyOrder"
             description="BetaX Consultants"
             link="https://easyorder.christianmacarthur.com"
           />
@@ -54,6 +57,7 @@ function Carousel() {
           <GlassProjects
             title="Neohacking"
             image={neohacking}
+            github_link="https://github.com/chr1stian-og/neo-hacking"
             description="Americo JR."
             link="https://americojunior.com"
           />

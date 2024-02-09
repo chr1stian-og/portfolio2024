@@ -31,16 +31,21 @@ function Contact() {
         <Navbar image={back} type="CONTACT" />
 
         <main className="flex flex-col items-center  justify-center  h-screen">
+          <div className="flex justify-center mb-20">
+            <h1 className="font-bold text-white text-xl hover:cursor-default">
+              CONTACT{" "}
+            </h1>
+          </div>
           <div className="flex justify-between sm:flex-row flex-col items-center gap-20 duration-200 transition-all">
             <div className="flex flex-col items-center gap-10">
               <div className="flex flex-col items-center align-center">
-                <h1 className="text-2xl font-bold text-[white]">Email</h1>
+                <h1 className="text-2xl text-[white]">Email</h1>
                 <h1 className="text-[#808080]">
                   christianmacarthur17@gmail.com
                 </h1>
               </div>
               <div className="flex flex-col items-center align-center">
-                <h1 className="text-2xl font-bold text-white">Socials</h1>
+                <h1 className="text-2xl text-white">Socials</h1>
                 <h1 className=" text-[#808080]">chr1stian.og</h1>
                 <div className="flex mt-2 flex-row gap-4 items-center justify-center">
                   <span
