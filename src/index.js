@@ -11,7 +11,14 @@ const rootElement = document.getElementById("root");
 const root = ReactDOM.createRoot(rootElement);
 root.render(
   <BrowserRouter>
-    <App />
-    <Footer />
+    <div className="App">
+      <App />
+      <Footer />
+    </div>
+    <div className="desktop-message">
+      <h1 className="text-white text-3xl">
+        App in maintenance for this screen size
+      </h1>
+    </div>
   </BrowserRouter>
 );

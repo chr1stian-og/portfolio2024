@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* App.css */
+
+/* Styles for desktop screens (min-width: 768px, adjust as needed) */
+@media only screen and (max-width: 767px) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+  .App {
+    display: none;
+  }
+
+  .desktop-message {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+}
