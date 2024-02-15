@@ -8,8 +8,14 @@ function GlassProjects({ title, description, image, link, github_link }) {
         <div className="gap-1 flex flex-row justify-between ">
           <div>
             <h2
-              className="card-title glass-title hover:underline hover:cursor-pointer"
-              onClick={() => window.open(link)}
+              className={`card-title glass-title  ${
+                link ? "hover:underline" : ""
+              } hover:cursor-pointer`}
+              Click={() => {
+                if (link) {
+                  window.open(link, "_blank");
+                }
+              }}
             >
               {title}
             </h2>

@@ -5,6 +5,7 @@ import xtools from "../assets/images/projects/xtools.png";
 import easyorder from "../assets/images/projects/easyorder.png";
 import neohacking from "../assets/images/projects/neohacking.png";
 import leureblue from "../assets/images/projects/leureblue.png";
+import noteai from "../assets/images/projects/noteai.png";
 
 function Carousel() {
   return (
@@ -60,6 +61,14 @@ function Carousel() {
             github_link="https://github.com/chr1stian-og/neo-hacking"
             description="Americo JR."
             link="https://americojunior.com"
+          />
+        </div>
+        <div className="carousel-item h-full">
+          <GlassProjects
+            title="note.ai"
+            image={noteai}
+            github_link="https://github.com/chr1stian-og/noteai"
+            description="LeureBlue"
           />
         </div>
       </div>

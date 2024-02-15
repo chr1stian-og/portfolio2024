@@ -11,6 +11,7 @@ import neohacking from "../assets/images/projects/neohacking.png";
 import portfolio from "../assets/images/projects/portfolio.png";
 import myclubnet from "../assets/images/projects/myclubnet.png";
 import leureblue from "../assets/images/projects/leureblue.png";
+import noteai from "../assets/images/projects/noteai.png";
 
 const Software = () => {
   const handleClick = () => {
@@ -113,6 +114,16 @@ const Software = () => {
             year={2023}
             client="Clubnet"
             image={myclubnet}
+            type="web Dashboard"
+            link="https://my.clubnet.mz"
+          />
+          <SoftwareProjects
+            title="note.ai"
+            description="Learn more"
+            year={2023}
+            client="LeureBlue"
+            image={noteai}
+            github_link="https://github.com/chr1stian-og/noteai"
             type="web Dashboard"
             link="https://my.clubnet.mz"
           />
