@@ -92,7 +92,7 @@ function Contact() {
                       type="email"
                       id="email"
                       className="form-control w-full px-4 py-1 bg-[#ffffff00] text-white border-[#808080] border-2 duration-200 transition-all outline-0 "
-                      placeholder="Email"
+                      placeholder="Your Email"
                       required
                     />
                   </div>
