@@ -56,7 +56,7 @@ const Software = () => {
             client="clubnet"
             github_link="https://github.com/chr1stian-og/email-tester"
             image={emailtester}
-            type="website"
+            type="Web App"
             link="https://email.christianmacarthur.com"
           />
           <SoftwareProjects
@@ -66,7 +66,7 @@ const Software = () => {
             client="clubnet"
             github_link="https://github.com/chr1stian-og/xtools"
             image={xtools}
-            type="website"
+            type="Web App"
             link="https://xtools.christianmacarthur.com"
           />
           <SoftwareProjects
@@ -85,7 +85,7 @@ const Software = () => {
             client="BetaX Consultants"
             github_link="https://github.com/chr1stian-og/EasyOrder"
             image={easyorder}
-            type="website"
+            type="Web App"
             link="https://easyorder.christianmacarthur.com"
           />
           <SoftwareProjects
@@ -118,13 +118,13 @@ const Software = () => {
             link="https://my.clubnet.mz"
           />
           <SoftwareProjects
-            title="note.ai"
+            project="note.ai"
             description="Learn more"
             year={2023}
             client="LeureBlue"
             image={noteai}
             github_link="https://github.com/chr1stian-og/noteai"
-            type="web Dashboard"
+            type="Web App"
             link="https://my.clubnet.mz"
           />
         </main>
